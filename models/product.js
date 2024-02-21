@@ -2,23 +2,23 @@ const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema({
     name: {
-        typr: String,
+        type: String,
         required: [true, 'Product Name is Required.']
     },
     price: {
-        typr: Number,
+        type: Number,
         required: [true, 'Product Price is Required.']
     },
     featured: {
-        typr: Boolean,
+        type: Boolean,
         default: false
     },
     rating: {
-        typr: Number,
+        type: Number,
         default: 4.5
     },
     createdAt: {
-        typr: Date,
+        type: Date,
         default: Date.now()
     },
     company: {
